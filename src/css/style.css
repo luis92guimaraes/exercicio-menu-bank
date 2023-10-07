@@ -32,15 +32,18 @@ body {
 .container .logo-title h1 {
     font-size: 30px;
     font-weight: 800;
-
 }
 
-.menu ul {
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 20px 10px;
     color: black;
 }
 
@@ -51,16 +54,23 @@ body {
     background-color: var(--btn-hover-color);
     padding: 13px 30px;
     border-radius: 8px;
-    border: none;
+    color: white;
+    width: 174px;
+}
+
+.menu .cadastro:hover {
+    color: black;
+}
+
+.menu li {
+    padding: 10px 10px;
 }
 
 .menu li:hover {
     background-color: var(--btn-hover-color);
     transform: scale(1.1);
     transition: 0.1 ease-in-out;
-    padding: 10px 10px;
 }
-
 
 .menu a:hover {
     color: white;
@@ -72,7 +82,3 @@ a {
     font-weight: 400;
     color: black;
 }
-
-
-
-
