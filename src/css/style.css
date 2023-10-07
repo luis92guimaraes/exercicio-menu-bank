@@ -43,8 +43,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
     color: black;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 10px 10px;
+}
+.menu li a:hover {
+    background-color: var(--btn-hover-color);
+    transform: scale(1.1);
+    transition: 0.1 ease-in-out;
+    color: white;
 }
 
 .menu .cadastro {
@@ -56,6 +67,7 @@ body {
     border-radius: 8px;
     color: white;
     width: 174px;
+    margin-left: 10px;
 }
 
 .menu .cadastro:hover {
@@ -66,19 +78,64 @@ body {
     padding: 10px 10px;
 }
 
-.menu li:hover {
-    background-color: var(--btn-hover-color);
-    transform: scale(1.1);
-    transition: 0.1 ease-in-out;
+
+@media(max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container .logo-title {
+        margin: 20px;
+    }
+
+    .container .logo-title img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container .logo-title h1 {
+        font-size: 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu .cadastro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
-.menu a:hover {
-    color: white;
-}
+@media(max-width: 375px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
 
-a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    color: black;
+    .container .logo-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .logo-title h1 {
+        font-size: 25px;
+    }
+
+    .container .logo-title img {
+        width: 30px;
+        height: 30px;
+    }
 }
