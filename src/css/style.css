@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Public+Sans:wght@300;400;800&display=swap');
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    background: var(--bg-color);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+
+.container .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container .logo-title img {
+    height: 50px;
+    width: 50px;
+}
+
+.container .logo-title img:hover {
+    transform: scale(1.1);
+    transition: 0.1 ease-in-out;
+}
+
+.container .logo-title h1 {
+    font-size: 30px;
+    font-weight: 800;
+
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 10px;
+    color: black;
+}
+
+.menu .cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-hover-color);
+    padding: 13px 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+.menu li:hover {
+    background-color: var(--btn-hover-color);
+    transform: scale(1.1);
+    transition: 0.1 ease-in-out;
+    padding: 10px 10px;
+}
+
+
+.menu a:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+
+
+
