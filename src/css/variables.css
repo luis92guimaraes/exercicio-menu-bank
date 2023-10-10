@@ -1,7 +1,7 @@
 :root {
     --bg-color: #FFFFFF;
-    --menu-text-color: black;
+    --menu-text-color: #000000;
     --btn-hover-color: #5BC241;
     --btn-text-color: #FFFFFF;
-    --btn-text-hover-color: black;
+    --btn-text-hover-color: #000000;
 }
