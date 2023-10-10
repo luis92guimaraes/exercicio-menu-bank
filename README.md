@@ -1,7 +1,7 @@
 # Exercicio @Devquest - Menu Flexbox
 
 
-#### Menu utilizando flexbox com elementos interativos com uso do hover
+#### Exemplo de  Menu utilizando flexbox com elementos interativos com uso do hover
 
 ## Índice
 
@@ -29,7 +29,7 @@
 
 ### Links
 
-- Site URL: https://luis92guimaraes.github.io/product-preview-card-component/
+- Site URL: https://luis92guimaraes.github.io/menu-flexbox/
 
 ### Construído com
 
