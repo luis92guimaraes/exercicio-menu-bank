@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Public+Sans:wght@300;400;800&display=swap');
 
 body {
+    background-color: var(--bg-color);
     font-family: 'Public Sans', sans-serif;
-    background: var(--bg-color);
 }
 
 .container {
@@ -12,130 +12,51 @@ body {
     padding: 45px;
 }
 
-
 .container .logo-title {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.container .logo-title img {
-    height: 50px;
-    width: 50px;
-}
 
-.container .logo-title img:hover {
+.container .logo-title:hover {
     transform: scale(1.1);
     transition: 0.1 ease-in-out;
 }
 
-.container .logo-title h1 {
-    font-size: 30px;
-    font-weight: 800;
-}
-
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-.menu ul{
+.menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-}
-.menu ul li a {
-    text-decoration: none;
     font-size: 20px;
-    color: black;
-    padding: 10px 10px;
-}
-.menu li a:hover {
-    background-color: var(--btn-hover-color);
-    transform: scale(1.1);
-    transition: 0.1 ease-in-out;
-    color: white;
+    gap: 40px;
 }
 
-.menu .cadastro {
+.menu li a{
+    padding: 10px 10px;
+
+}
+
+.menu li a:hover{
+    background-color: var(--btn-hover-color);
+    color: var(--btn-text-color);
+}
+
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--btn-hover-color);
-    padding: 13px 30px;
-    border-radius: 8px;
-    color: white;
-    width: 174px;
-    margin-left: 10px;
+    color: var(--btn-text-color);
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
-.menu .cadastro:hover {
-    color: black;
-}
-
-.menu li {
-    padding: 10px 10px;
+.button:hover {
+    transform: scale(1.1);
+    transition: 0.1 ease-in-out;
+    color: var(--btn-text-hover-color);
 }
 
 
-@media(max-width: 768px) {
-    
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container .logo-title {
-        margin: 20px;
-    }
-
-    .container .logo-title img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .container .logo-title h1 {
-        font-size: 30px;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-
-    .menu ul {
-        flex-direction: column;
-    }
-
-    .menu .cadastro {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-}
-
-@media(max-width: 375px) {
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container .logo-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container .logo-title h1 {
-        font-size: 25px;
-    }
-
-    .container .logo-title img {
-        width: 30px;
-        height: 30px;
-    }
-}
